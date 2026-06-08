@@ -5,6 +5,10 @@
 
 .cabecalho {
     padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(109, 42, 17);
 }
 
 .cartao {
@@ -14,4 +18,41 @@
 
 .cartao-imagem{
     width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(124, 96, 86);
+}
+
+main {
+    flex: 1;
+}
+
+.cabecalho-link {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+h1 {
+    color: #fff;
+    font-size: 24px;
+}
+
+footer {
+    background-color: rgb(109, 42, 17);
+    padding: 15px 25px;
+    color: #fff;
+} 
+
+.cartao-interno {
+    position: relative;
+}
+
+.cartao-frente, .cartao-verso {
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
